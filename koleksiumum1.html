@@ -1,0 +1,321 @@
+<DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title> Membuat Web Pustaka </title>
+
+<style>
+body { margin:0; font-family: Arial; background:#f4f4f4; }
+
+
+
+.header img {
+    width: 100%;     
+    height: auto;      
+    display: block;
+}
+
+
+nav {
+    background:#0a5d36;
+    padding:12px;
+    text-align:center;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    background: linear-gradient(90deg, #c098ff, #b7e4d3);
+}
+nav a {
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+}
+nav a:hover {
+    background:#084826;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px; 
+    border-radius: 5px;
+    margin-top: 5px;   
+    left: 0;           
+    z-index: 999;
+}
+.dropdown-content a {
+    color:black;
+    padding:5px;
+    display:block;
+    text-align:left;
+}
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+
+section {
+    background:white;
+    max-width:1000px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 5px #bbb;
+    background: linear-gradient(90deg, #c098ff, #b7e4d3);
+}
+h2 { text-align:center; color:#0a5d36; }
+
+
+
+footer {
+    background:#03351e;
+    color:white;
+    padding:40px 20px;
+    margin-top:50px;
+}
+.footer-container {
+    max-width:1100px;
+    margin:auto;
+}
+.footer-container input {
+    padding:10px;
+    width:60%;
+    border-radius:6px;
+    border:none;
+}
+button {
+    padding:10px 20px;
+    background:#ffcc00;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:6px;
+}
+.social img {
+    width:30px;  
+    height:30px;
+    margin-right:10px;
+}
+.slider {
+  width: 100%;
+  overflow-x: auto;           /* enable horizontal sliding */
+  display: flex;              /* line images horizontally */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  flex: 0 0 100%;            /* each slide = full width */
+  scroll-snap-align: start;
+}
+
+.slider img {
+  flex: 0 0 100%;             /* <-- 1 full image per slide */
+  width: 100%;                /* fit width */
+  height: auto;               /* keep full height */
+  scroll-snap-align: start;
+  object-fit: contain;        /* show full image (no crop) */
+}
+
+
+.card img {
+   flex: 0 0 100%;             /* <-- 1 full image per slide */
+  width: 50%;                /* fit width */
+  height: auto;               /* keep full height */
+  scroll-snap-align: start;
+  object-fit: contain;        /* show full image (no crop) */
+}
+
+</style>
+</head>
+<body>
+<section id="home">
+
+<!-- HEADER -->
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">HOME</a>
+
+    <div class="dropdown">
+        <a href="#">PROFIL ▼</a>
+        <div class="dropdown-content">
+	<a href="Sejarah.html">Sejarah</a>
+	<a href="Visi dan Misi.html">Visi dan Misi</a>
+    <a href="struktur_organisasi.html">Struktur Organisasi</a>
+    <a href="tugas_pokok_dan_fungsi.html">Tugas Pokok dan Fungsi</a>
+    <a href="koleksi_dan_layanan.html">Koleksi dan Layanan</a>
+    </div>
+
+	<div class="dropdown">
+        <a href="#">LAYANAN ▼</a>
+        <div class="dropdown-content">
+            <a href="koleksi_antiquariat.html">Koleksi Antiquariat</a>
+            <a href="koleksi_deposit.html">Koleksi Deposit</a>
+            <a href="koleksiumum1.html">Koleksi Umum</a>
+        </div>
+    <div class="dropdown">
+        <a href="#">PUBLIKASI ▼</a>
+        <div class="dropdown-content">
+            <a href="https://repository.pertanian.go.id/collections/1ad7ec86-fb31-48aa-9864-f1f6beb85430">JPP</a>
+            <a href="https://repository.pertanian.go.id/communities/30056552-2f3a-4f90-9a9d-93a62b20e395">Buku</a>
+            <a href="https://repository.pertanian.go.id/communities/3b8e7353-84ae-4b26-9f7f-a0624e26b94e">Jurnal</a>
+            <a href="https://repository.pertanian.go.id/collections/b8cd9376-d262-49e1-bb14-b27d11ef332c">Brosur</a>
+            <a href="https://pustaka.bppsdmp.pertanian.go.id/publikasi/warta">Warta</a>
+        </div>
+</nav>
+<div class="header">
+    <img src="LOGO HEADER.png" alt="Header Perpustakaan">
+</div>
+<marquee>PUSTAKA Library Comes To You  Balai Besar Perpustakaan dan Literasi Pertanian                                                    
+</marquee>
+<!-- Card 1 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-prospek-pengembangan-padi-gogo-perspektif-kebijakan-dan-implementasi-di-lapangan">
+        <img src="template1.jpg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">08 December 2025</p>
+            <h3>info-perpustakaan/Resensi-buku-prospek-pengembangan-padi-gogo-perspektif-kebijakan-dan-implementasi-di-lapangan</h3>
+        </div>
+    </a>
+<hr>
+    <!-- Card 2 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-the-power-of-tea">
+        <img src="template2.jpeg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">03 December 2025</p>
+            <h3>info-perpustakaan/resensi-buku-the-power-of-tea</h3>
+        </div>
+    </a>
+<hr>
+    <!-- Card 3 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-teknologi-budidaya-tanaman-sorgum-unggul-bebas-limbah">
+        <img src="template3.jpg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">27 November 2025</p>
+            <h3>info-perpustakaan/resensi-buku-teknologi-budidaya-tanaman-sorgum-unggul-bebas-limbah </h3>
+        </div>
+    </a>
+    <hr>
+    <!-- Card 4 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-statistik-pertanian-2024">
+        <img src="template4.jpg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">26 November 2025</p>
+            <h3>info-perpustakaan/resensi-buku-statistik-pertanian-2024</h3>
+        </div>
+    </a>
+<hr>
+    <!-- Card 5 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-29-teknik-urban-farming">
+        <img src="template5.jpeg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">02 December 2025</p>
+            <h3>info-perpustakaan/resensi-buku-29-teknik-urban-farming</h3>
+        </div>
+    </a>
+<hr>
+    <!-- Card 6 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-penerapan-diseminasi-teknologi-budi-daya-padi-lahan-pasang-surut">
+        <img src="template6.jpg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">20 November 2025</p>
+            <h3>info-perpustakaan/resensi-buku-penerapan-diseminasi-teknologi-budi-daya-padi-lahan-pasang-surut</h3>
+        </div>
+    </a>
+    <hr>
+    <!-- Card 7 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-pengelolaan-sumberdaya-menuju-pertanian-modern-berkelanjutan">
+        <img src="template7.jpg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">17 November 2025</p>
+            <h3>info-perpustakaan/resensi-buku-pengelolaan-sumberdaya-menuju-pertanian-modern-berkelanjutan</h3>
+        </div>
+    </a>
+<hr>
+    <!-- Card 8 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-petunjuk-teknis-budidaya-tanaman-kedelai">
+        <img src="template8.jpeg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">14 November 20255</p>
+            <h3>info-perpustakaan/resensi-buku-petunjuk-teknis-budidaya-tanaman-kedelai</h3>
+        </div>
+    </a>
+<hr>
+    <!-- Card 9 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-peningkatan-indeks-pertanaman">
+        <img src="template9.jpg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">11 November 2025</p>
+            <h3>info-perpustakaan/resensi-buku-peningkatan-indeks-pertanaman</h3>
+        </div>
+    </a>
+    <hr>
+        <!-- Card 10 -->
+    <a class="card" href="https://pustaka.bppsdmp.pertanian.go.id/info-perpustakaan/resensi-buku-sumber-hara-tanaman-berbahan-baku-lokal">
+        <img src="template10.jpg" >
+        <div class="card-content">
+            <p class="category">📄 Info Perpustakaan</p>
+            <p class="date">06 August 2025</p>
+            <h3>info-perpustakaan/resensi-buku-sumber-hara-tanaman-berbahan-baku-lokal</h3>
+        </div>
+    </a>
+    <hr>
+<br>
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+
+        <h3>Hubungi Kami</h3>
+        <p>Balai Besar Perpustakaan dan Literasi Pertanian</p>
+        <p>Jl. Ir. H. Juanda No.20, RT.04/RW.08, Paledang, Bogor Tengah, Kota Bogor, Jawa Barat 16122</p>
+        
+        <p><b>Telp:</b> +62-251-8321746</p>
+        <p><b>Email:</b> pustaka@pertanian.go.id</p>
+
+        <h4>Waktu Layanan</h4>
+        <p>Senin - Jumat, 08.00 - 15.30 WIB</p>
+
+        <h4>Link Terkait</h4>
+        <ul>
+            <li><a href="https://www.pertanian.go.id/"style="color:inherit; text-decoration:none;">Kementerian Pertanian</a></li>
+            <li><a href="http://www.bsip.pertanian.go.id/"style="color:inherit; text-decoration:none;">Badan Standardisasi Instrumen Pertanian</a></li>
+            <li><a href="https://www.fao.org/home/en/"style="color:inherit; text-decoration:none;">Lembaga Pangan Dunia</a></li>
+            <li><a href="https://www.perpusnas.go.id/"style="color:inherit; text-decoration:none;">Perpustakaan Nasional</a></li>
+        </ul>
+
+        <h4>Feedback</h4>
+        <input type="email" placeholder="Isi alamat email..">
+        <button>Kirim</button>
+
+               <h4>Ikuti Kami</h4>
+        <div class="social">
+            <a href="https://www.youtube.com/@PustakaKementerianPertanian" target="_blank"><img src="logo_youtube.png"></a>
+            <a href="https://www.facebook.com/pustakakementan" target="_blank"><img src="logo_facebook.png"></a>
+            <a href="https://www.tiktok.com/@pustaka_kementan" target="_blank"><img src="logo_tiktok.png"></a>
+            <a href="https://www.instagram.com/pustaka.kementan/#" target="_blank"><img src="logo_instagram.png"></a>
+            <a href="https://x.com/pustakakemtan" target="_blank"><img src="logo_x.png"></a>
+        </div>
+
+    </div>
+</footer>
+</section>
+</body>
+</html>

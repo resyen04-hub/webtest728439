@@ -1,0 +1,265 @@
+<html lang="id">
+<head>
+
+<style>
+body { margin:0; font-family: Arial; background:#f4f4f4; }
+
+
+
+.header img {
+    width: 100%;     
+    height: auto;      
+    display: block;
+}
+
+
+nav {
+    background:#0a5d36;
+    padding:12px;
+    text-align:center;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    background: linear-gradient(90deg, #c098ff, #b7e4d3);
+}
+nav a {
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+}
+nav a:hover {
+    background:#084826;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px; 
+    border-radius: 5px;
+    margin-top: 5px;   
+    left: 0;           
+    z-index: 999;
+}
+.dropdown-content a {
+    color:black;
+    padding:5px;
+    display:block;
+    text-align:left;
+}
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+
+section {
+    background:white;
+    max-width:1000px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 5px #bbb;
+    background: linear-gradient(90deg, #c098ff, #b7e4d3);
+}
+h2 { text-align:center; color:#0a5d36; }
+
+
+
+footer {
+    background:#03351e;
+    color:white;
+    padding:40px 20px;
+    margin-top:50px;
+}
+.footer-container {
+    max-width:1100px;
+    margin:auto;
+}
+.footer-container input {
+    padding:10px;
+    width:60%;
+    border-radius:6px;
+    border:none;
+}
+button {
+    padding:10px 20px;
+    background:#ffcc00;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:6px;
+}
+.social img {
+    width:30px;  
+    height:30px;
+    margin-right:10px;
+}
+.slider {
+  width: 100%;
+  overflow-x: auto;           /* enable horizontal sliding */
+  display: flex;              /* line images horizontally */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  flex: 0 0 100%;            /* each slide = full width */
+  scroll-snap-align: start;
+}
+
+.slider img {
+  flex: 0 0 100%;             /* <-- 1 full image per slide */
+  width: 100%;                /* fit width */
+  height: auto;               /* keep full height */
+  scroll-snap-align: start;
+  object-fit: contain;        /* show full image (no crop) */
+}
+</style>
+</head>
+
+<body>
+<section id="home">
+
+<!-- HEADER -->
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">HOME</a>
+
+    <div class="dropdown">
+        <a href="#">PROFIL ▼</a>
+        <div class="dropdown-content">
+	<a href="Sejarah.html">Sejarah</a>
+	<a href="Visi dan Misi.html">Visi dan Misi</a>
+    <a href="struktur_organisasi.html">Struktur Organisasi</a>
+    <a href="tugas_pokok_dan_fungsi.html">Tugas Pokok dan Fungsi</a>
+    <a href="koleksi_dan_layanan.html">Koleksi dan Layanan</a>
+    </div>
+
+	<div class="dropdown">
+        <a href="#">LAYANAN ▼</a>
+        <div class="dropdown-content">
+            <a href="koleksi_antiquariat.html">Koleksi Antiquariat</a>
+            <a href="koleksi_deposit.html">Koleksi Deposit</a>
+            <a href="koleksiumum1.html">Koleksi Umum</a>
+        </div>
+    <div class="dropdown">
+        <a href="#">PUBLIKASI ▼</a>
+        <div class="dropdown-content">
+            <a href="https://repository.pertanian.go.id/collections/1ad7ec86-fb31-48aa-9864-f1f6beb85430">JPP</a>
+            <a href="https://repository.pertanian.go.id/communities/30056552-2f3a-4f90-9a9d-93a62b20e395">Buku</a>
+            <a href="https://repository.pertanian.go.id/communities/3b8e7353-84ae-4b26-9f7f-a0624e26b94e">Jurnal</a>
+            <a href="https://repository.pertanian.go.id/collections/b8cd9376-d262-49e1-bb14-b27d11ef332c">Brosur</a>
+            <a href="https://pustaka.bppsdmp.pertanian.go.id/publikasi/warta">Warta</a>
+        </div>
+</nav>
+<div class="header">
+    <img src="LOGO HEADER.png" alt="Header Perpustakaan">
+</div>
+<marquee>PUSTAKA Library Comes To You &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Balai Besar Perpustakaan dan Literasi Pertanian                                                    
+</marquee>
+<!-- ISI -->
+<section id="Koleksi dan Layanan" style="
+    background:white;
+    max-width:1000px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 5px #bbb;
+    font-family:Arial;
+    line-height:1.7;
+">
+    <h2 style="text-align:center; color:#0a5d36;">Koleksi dan Layanan</h2>
+<hr>
+<b>KOLEKSI</b>
+<br>
+Koleksi PUSTAKA mulai dihimpun sejak tahun 1842. Pengadaan bahan pustaka untuk koleksi perpustakaan secara teratur dilakukan dengan pembelian (termasuk langganan) dan penukaran. Selain itu diperoleh hibah/hadiah bahan pustaka dari badan-badan atau yayasan internasional Dengan ditunjang oleh kemajuan teknologi informasi, PUSTAKA mengembangkan koleksinya, baik bentuk tercetak seperti buku dan majalah, maupun dalam CD-ROM dan pangkalan data elektronik, dan Pengembangan koleksi perpustakaan juga dilakukan dengan melangganan e-jurnal dan ebook.
+<br><br>
+<b>CD-ROM</b><br>
+Koleksi CD-ROM yang tersedia:<br>
+
+1. AGRIS, berisi abstrak literatur hasil penelitian pertanian dari seluruh dunia yang dihimpun oleh FAO (Food and Agriculture Organisation);<br>
+2. CAB Abstrak, produk dari CABI (Center for Agricultural and Biosciences International) berisi pangkalan data bibliografis hasil penelitian bidang pertanian, kehutanan, kesehatan gizi, dll;<br>
+3. AGRICOLA, berisi pangkalan data bibliografi dari literatur bidang pertanian yang dibuat oleh NAL (National Agricultural Library, USDA);<br>
+4. TROPAG & RURAL, berisi literatur bidang pengembangan pertanian, kehutanan, manajemen lingkungan daerah tropik, dll, yang diterbitkan oleh KIT (Koninklijke Institute voor de Tropen) Netherlands;<br>
+5. Statistik Indonesia (BPS), menyajikan data dari berbagai bidang dilengkapi dengan ulasan deskriptif dan penjelasan teknis dari bidang bersangkutan;<br>
+6. TEEAL (The Essential Electronic Agricultural Library), memuat 132 majalah dengan teks lengkap (full-text) dan 14 judul monograf terbitan FAO;<br>
+7. Journal of Biological Chemistry, diterbitkan oleh American Society of Biochemistry and Molecular Biology, Inc.;<br>
+8. Crop Protection Compendium, berisi informasi dalam bentuk teks, peta dan gambar tentang penyakit, musuh alami dan informasi tentang negara Asia Tenggara dan Pasific.
+<br><br>
+<b>Pangkalan Data</b><br>
+Pangkalan data yang tersedia:<br>
+1. Pangkalan data pertanian Indonesia, memuat informasi bibliografis dan abstrak pertanian Indonesia;<br>
+2. Pangkalan data penelitian yang sedang berjalan, memuat informasi tentang penelitian pertanian yang sedang berjalan di lingkup Badan Litbang Pertanian;c. Katalog buku, memuat informasi mengenai judul, penulis penerbit dari buku/monograph yang dimiliki PUSTAKA;<br>
+3. Katalog majalah, memuat informasi mengenai judul, volume dan nomor majalah yang dimiliki PUSTAKA;<br>
+4. Pangkalan data teknologi pertanian, memuat informasi teknologi pertanian;<br>
+5. Pangkalan data komoditas pertanian;<br>
+6. Proquest. Untuk memperkaya koleksi, PUSTAKA melanggan ProQuest, sebuah penyedia jasa database online yang menyediakan akses ke ratusan jurnal ilmiah. Pangkalan data yang dilanggan oleh PUSTAKA adalah ProQuest Agricultural Journals yang berisi teks lengkap seperti antara lain Agricultural Research, Journal of Soil and Water Conservation, serta Plant Physiology. Selain itu tersedia juga artikel dari berbagai topik seperti earthand environmental science, food and human nutrition, agribusiness, agricultural education, aquaculture, climate, biosciences, dan organic gardening.
+<br><br><b>LAYANAN PERPUSTAKAAN</b>
+<br>
+Pustaka memberikan berbagai layanan perpustakaan seperti layanan sirkulasi, layanan rujukan, layanan informasi terbaru, layanan informasi terseleksi dan layanan penelusuran informasi, baik secara manual maupun elektronis.
+<br><br>
+<b>Layanan Sirkulasi</b>
+<br>
+Layanan sirkulasi disediakan bagi pengunjung yang datang langsung ke perpustakaan. Melalui layanan ini, staf perpustakaan memberikan bimbingan untuk menelusur informasi yang dibutuhkan melalui berbagai sarana penelusuran antara lain kartu katalog, daftar bibliografi, indeks, abstrak, CD-ROM, pangkalan data elektronik ataupun melalui Internet.
+<br><br>
+<b>Layanan Rujukan</b>
+<br>
+Layanan rujukan merupakan layanan yang menjawab pertanyaan pengguna perpustakaan akan informasi yang dibutuhkan atau menunjukkan informasi rujukan. Koleksi materi rujukan yang tersedia antara lain kamus, handbook, data statistik, direktori, ensiklopedia, bibliografi, biografi, buku tahunan, indeks dan abstrak.
+<br><br>
+<b>Layanan Informasi Terbaru</b>
+<br>
+Layanan informasi terbaru, berupa kumpulan daftar isi terbaru dari jurnal-jurnal ilmiah yang tersedia di PUSTAKA. Paket informasi terbaru ini dikirimkan secara berkala ke pengguna.
+<br><br>
+<b>Layanan Penelusuran Informasi</b>
+<br>
+Layanan ini merupakan salah satu bentuk layanan yang ditujukan bagi pengguna yang tidak dapat langsung mengunjungi PUSTAKA. Pengguna dapat meminta informasi, kemudian pustakawan akan menelusur, dan menyampaikan informasi yang diperoleh kepada pengguna. Permintaan penelusuran informasi dapat disampaikan melalui telepon, faksimil, surat elektronik maupun surat biasa
+<br><br>
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+
+        <h3>Hubungi Kami</h3>
+        <p>Balai Besar Perpustakaan dan Literasi Pertanian</p>
+        <p>Jl. Ir. H. Juanda No.20, RT.04/RW.08, Paledang, Bogor Tengah, Kota Bogor, Jawa Barat 16122</p>
+        
+        <p><b>Telp:</b> +62-251-8321746</p>
+        <p><b>Email:</b> pustaka@pertanian.go.id</p>
+
+        <h4>Waktu Layanan</h4>
+        <p>Senin - Jumat, 08.00 - 15.30 WIB</p>
+
+        <h4>Link Terkait</h4>
+        <ul>
+            <li><a href="https://www.pertanian.go.id/"style="color:inherit; text-decoration:none;">Kementerian Pertanian</a></li>
+            <li><a href="http://www.bsip.pertanian.go.id/"style="color:inherit; text-decoration:none;">Badan Standardisasi Instrumen Pertanian</a></li>
+            <li><a href="https://www.fao.org/home/en/"style="color:inherit; text-decoration:none;">Lembaga Pangan Dunia</a></li>
+            <li><a href="https://www.perpusnas.go.id/"style="color:inherit; text-decoration:none;">Perpustakaan Nasional</a></li>
+        </ul>
+
+        <h4>Feedback</h4>
+        <input type="email" placeholder="Isi alamat email..">
+        <button>Kirim</button>
+
+               <h4>Ikuti Kami</h4>
+        <div class="social">
+            <a href="https://www.youtube.com/@PustakaKementerianPertanian" target="_blank"><img src="logo_youtube.png"></a>
+            <a href="https://www.facebook.com/pustakakementan" target="_blank"><img src="logo_facebook.png"></a>
+            <a href="https://www.tiktok.com/@pustaka_kementan" target="_blank"><img src="logo_tiktok.png"></a>
+            <a href="https://www.instagram.com/pustaka.kementan/#" target="_blank"><img src="logo_instagram.png"></a>
+            <a href="https://x.com/pustakakemtan" target="_blank"><img src="logo_x.png"></a>
+        </div>
+
+    </div>
+</footer>
+</section>
+</body>
+</html>
