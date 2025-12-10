@@ -174,10 +174,16 @@ button {
   scroll-snap-align: start;
   object-fit: contain;        /* show full image (no crop) */
 }
+.card img {
+   flex: 0 0 100%;             /* <-- 1 full image per slide */
+  width: 50%;                /* fit width */
+  height: auto;               /* keep full height */
+  scroll-snap-align: start;
+  object-fit: contain;        /* show full image (no crop) */
+}
 
 </style>
 </head>
-
 
 <body>
 <section id="home">
@@ -186,16 +192,18 @@ button {
  <div class="header">
     <img src="logo npp1.png" alt="Header Perpustakaan">
 </div>
+<div class="header">
+    <img src="LOGO HEADER.png" alt="Header Perpustakaan">
+</div>
 <!-- NAVIGATION -->
 <div class="container">
         <nav class="navbar">
 
             <ul class="navbar-nav">
                 <li><a href="index.html">Home</a></li>
-
                 <!-- DROPDOWN -->
                 <li>
-                    <a href="#">Profil ▼</a>
+                    <a href="index.html">Profil ▼</a>
                     <ul class="dropdown-menu">
                         <li><a href="Sejarah.html">Sejarah</a></li>
                         <li><a href="Visi dan Misi.html">Visi dan Misi</a></li>
@@ -223,10 +231,7 @@ button {
                     </ul>
                 </li>
             </nav><div>
-<div class="header">
-    <img src="LOGO HEADER.png" alt="Header Perpustakaan">
-</div>
-<marquee>PUSTAKA Library Comes To You &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Balai Besar Perpustakaan dan Literasi Pertanian                                                    
+                <marquee>PUSTAKA Library Comes To You &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Balai Besar Perpustakaan dan Literasi Pertanian                                                    
 </marquee>
  <!-- isi -->
   <section id="Koleksi dan Layanan" style="
