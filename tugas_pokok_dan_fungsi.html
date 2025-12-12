@@ -19,6 +19,7 @@ body { margin:0; font-family: Arial; background:#f4f4f4; }
         nav.navbar {
             background: #ffffff;
             width: 100%;
+            height: auto;
             padding: 15px 0;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
             text-align: center; /* center nav content */
@@ -29,7 +30,7 @@ body { margin:0; font-family: Arial; background:#f4f4f4; }
         .navbar-nav {
             list-style: none;
             display: inline-flex;    /* makes it center nicely */
-            gap: 20px;
+            gap: 10px;
         }
 
         /* List items */
@@ -48,7 +49,7 @@ body { margin:0; font-family: Arial; background:#f4f4f4; }
         }
 
         .navbar-nav a:hover {
-            color: #3498db;
+            color: #2f00ff;
         }
 
         /* DROPDOWN */
@@ -171,8 +172,7 @@ button {
   flex: 0 0 100%;             /* <-- 1 full image per slide */
   width: 100%;                /* fit width */
   height: auto;               /* keep full height */
-  scroll-snap-align: start;
-  object-fit: contain;        /* show full image (no crop) */
+  scroll-snap-align: start;       /* show full image (no crop) */
 }
 .card img {
    flex: 0 0 100%;             /* <-- 1 full image per slide */
@@ -189,51 +189,81 @@ button {
 <section id="home">
 
 <!-- HEADER -->
+  <marquee>PUSTAKA Library Comes To You &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Balai Besar Perpustakaan dan Literasi Pertanian                                                    
+</marquee>
  <div class="header">
     <img src="logo npp1.png" alt="Header Perpustakaan">
 </div>
 <div class="header">
     <img src="LOGO HEADER.png" alt="Header Perpustakaan">
 </div>
+
 <!-- NAVIGATION -->
 <div class="container">
         <nav class="navbar">
 
             <ul class="navbar-nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">HOME</a></li>
+
                 <!-- DROPDOWN -->
                 <li>
-                    <a href="index.html">Profil ▼</a>
+                    <a>PROFIL ▼</a>
                     <ul class="dropdown-menu">
-                        <li><a href="Sejarah.html">Sejarah</a></li>
-                        <li><a href="Visi dan Misi.html">Visi dan Misi</a></li>
-                        <li><a href="struktur_organisasi.html">Struktur Organisasi</a></li>
-                        <li><a href="tugas_pokok_dan_fungsi.html">Tugas Pokok dan Fungsi</a></li>
-                        <li><a href="koleksi_dan_layanan.html">Koleksi dan Layanan</a></li>
+                        <a href="Sejarah.html">Sejarah</a>
+                        <a href="Visi dan Misi.html">Visi dan Misi</a>
+                        <a href="struktur_organisasi.html">Struktur Organisasi</a>
+                        <a href="tugas_pokok_dan_fungsi.html">Tugas Pokok dan Fungsi</a>
+                        <a href="koleksi_dan_layanan.html">Koleksi dan Layanan</a>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#">Layanan ▼</a>
+                   <a>LAYANAN ▼</a>
                     <ul class="dropdown-menu">
-                        <li><a href="koleksiumum1.html">Koleksi Umum</a></li>
+                        <a href="https://kikp-pertanian.id/antiquariat/opac/">Koleksi Antiquariat</a>
+                        <a href="http://192.168.123.79/opac/">Koleksi Deposit</a>
+                        <a href="https://kikp-pertanian.id/pustaka/opac/">Koleksi Umum</a>
+                        <a href="koleksiumum1.html">Resensi Buku</a>
+
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#">Publikasi ▼</a>
+                    <a>PUBLIKASI ▼</a>
                     <ul class="dropdown-menu">
-                    <li><a href="https://repository.pertanian.go.id/collections/1ad7ec86-fb31-48aa-9864-f1f6beb85430">JPP</a></li>
-                    <li><a href="https://repository.pertanian.go.id/communities/30056552-2f3a-4f90-9a9d-93a62b20e395">Buku</a></li>
-                    <li><a href="https://repository.pertanian.go.id/communities/3b8e7353-84ae-4b26-9f7f-a0624e26b94e">Jurnal</a></li>
-                    <li><a href="https://repository.pertanian.go.id/collections/b8cd9376-d262-49e1-bb14-b27d11ef332c">Brosur</a></li>
-                    <li><a href="https://pustaka.bppsdmp.pertanian.go.id/publikasi/warta">Warta</a>
+                    <a href="https://repository.pertanian.go.id/collections/1ad7ec86-fb31-48aa-9864-f1f6beb85430">JPP</a>
+                    <a href="https://repository.pertanian.go.id/communities/30056552-2f3a-4f90-9a9d-93a62b20e395">Buku</a>
+                    <a href="https://repository.pertanian.go.id/communities/3b8e7353-84ae-4b26-9f7f-a0624e26b94e">Jurnal</a>
+                    <a href="https://repository.pertanian.go.id/collections/b8cd9376-d262-49e1-bb14-b27d11ef332c">Brosur</a>
+                    <a href="https://pustaka.bppsdmp.pertanian.go.id/publikasi/warta">Warta</a>
+                    </ul>
+                </li>
+                <li>
+                   <a>KEPUSTAKAWANAN ▼</a>
+                    <ul class="dropdown-menu">
+                        <a href="https://pustaka.bppsdmp.pertanian.go.id/kepustakawanan/petunjuk-teknis-bagi-pustakawan">Petunjuk Teknis Bagi Pustakawan</a>
+                        <a href="https://fungsional.pertanian.go.id/">Dupak Online</a>
+                    </ul>
+                </li>
+                <li><a href="index.html">INFORMASI PUBLIK</a></li>
+                </li>
+                <li>
+                   <a>SURVEI IKM ▼</a>
+                    <ul class="dropdown-menu">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScrCDfU5getZalBvgD3lptGcXmqfRkNLKO5Ry5DiRWtGIrs4g/viewform?usp=send_form">Survei Perpustakaan</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezzHHQzEWvOHCyChsyapoJGWLk_AT-1_aAUbznuhoeYHKzZQ/viewform?vc=0&c=0&w=1&flr=0">Survei Literasi</a>
+                    </ul>
+                </li>
+                <li>
+                   <a>ZONA INTEGRITAS ▼</a>
+                    <ul class="dropdown-menu">
+                        <a href="https://pustaka.bppsdmp.pertanian.go.id/zona-integritas/wbk">WBK</a>
+                        <a href="https://pustaka.bppsdmp.pertanian.go.id/zona-integritas/pengaduan">Pengaduan</a>
+                        <a href="https://ppid.pertanian.go.id/index.php/portal">Permohonan Informasi Publi</a>
                     </ul>
                 </li>
             </nav><div>
-                <marquee>PUSTAKA Library Comes To You &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Balai Besar Perpustakaan dan Literasi Pertanian                                                    
-</marquee>
- <!-- isi -->
+                 <!-- isi -->
   <section id="Tugas Pokok dan Fungsi" style="
     background:white;
     max-width:1000px;
